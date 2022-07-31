@@ -1,0 +1,48 @@
+1. Sebutkan beberapa sample framework python!
+    ::Djanggo, Flask, Cherry Py, Dash, Falcon
+
+2. Bagaimana cara menginstall library di python!
+    :: pip install <nama_lbrary> 
+    :: pip install numphy
+3. Buatlah function dengan Python untuk menghasilkan Bintang segitiga
+    for b in range(0, 10, 1):
+        for a in range(0, b+1, 1):
+            print("* ", end="")
+        print("")
+
+4. Buatlah function dengan Python untuk memeriksa suatu bilangan prima 
+    def is_prima(x):
+        for i in range(2, x):
+            if x % i == 0:
+                return "Bukan bilangan prima"
+
+        return "Bilangan prima"
+
+
+5. Buatlah function yang menghitung jumlah huruf kapital dalam sebuah file
+    def capital_find(capital):
+        varlist = []
+        for c in capital:
+            if c.isupper():
+                varlist.append(c)
+        return len(varlist)
+
+    print(capital_find("TXt")) #2
+
+6. Buatlah function untuk mengimplementasikan algoritma pengurutan daftar(array)
+        def sort_list(sample):
+            sample.sort()
+            return sample
+
+        print(sort_list(sample))
+
+7. Usia Emas
+        def umur_emas():
+            umur = int(input("Masukkan umur anda : "))
+            tahun_ini = 2022
+            hasil = tahun_ini + umur
+            return "Anda akan berumur 50 tahun lagi pada tahun {}".format(hasil)
+
+
+        print(umur_emas())
+            
